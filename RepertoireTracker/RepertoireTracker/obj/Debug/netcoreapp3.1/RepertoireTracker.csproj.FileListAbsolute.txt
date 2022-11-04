@@ -1,0 +1,14 @@
+C:\Repos\RepertoireTracker\RepertoireTracker\bin\Debug\netcoreapp3.1\RepertoireTracker.exe
+C:\Repos\RepertoireTracker\RepertoireTracker\bin\Debug\netcoreapp3.1\RepertoireTracker.deps.json
+C:\Repos\RepertoireTracker\RepertoireTracker\bin\Debug\netcoreapp3.1\RepertoireTracker.runtimeconfig.json
+C:\Repos\RepertoireTracker\RepertoireTracker\bin\Debug\netcoreapp3.1\RepertoireTracker.runtimeconfig.dev.json
+C:\Repos\RepertoireTracker\RepertoireTracker\bin\Debug\netcoreapp3.1\RepertoireTracker.dll
+C:\Repos\RepertoireTracker\RepertoireTracker\bin\Debug\netcoreapp3.1\RepertoireTracker.pdb
+C:\Repos\RepertoireTracker\RepertoireTracker\obj\Debug\netcoreapp3.1\RepertoireTracker.csproj.AssemblyReference.cache
+C:\Repos\RepertoireTracker\RepertoireTracker\obj\Debug\netcoreapp3.1\RepertoireTracker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repos\RepertoireTracker\RepertoireTracker\obj\Debug\netcoreapp3.1\RepertoireTracker.AssemblyInfoInputs.cache
+C:\Repos\RepertoireTracker\RepertoireTracker\obj\Debug\netcoreapp3.1\RepertoireTracker.AssemblyInfo.cs
+C:\Repos\RepertoireTracker\RepertoireTracker\obj\Debug\netcoreapp3.1\RepertoireTracker.csproj.CoreCompileInputs.cache
+C:\Repos\RepertoireTracker\RepertoireTracker\obj\Debug\netcoreapp3.1\RepertoireTracker.dll
+C:\Repos\RepertoireTracker\RepertoireTracker\obj\Debug\netcoreapp3.1\RepertoireTracker.pdb
+C:\Repos\RepertoireTracker\RepertoireTracker\obj\Debug\netcoreapp3.1\RepertoireTracker.genruntimeconfig.cache
