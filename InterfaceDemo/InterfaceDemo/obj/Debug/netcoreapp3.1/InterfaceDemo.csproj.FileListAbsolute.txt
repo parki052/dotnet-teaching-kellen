@@ -1,0 +1,14 @@
+C:\Repos\dotnet-teaching-kellen\InterfaceDemo\InterfaceDemo\bin\Debug\netcoreapp3.1\InterfaceDemo.exe
+C:\Repos\dotnet-teaching-kellen\InterfaceDemo\InterfaceDemo\bin\Debug\netcoreapp3.1\InterfaceDemo.deps.json
+C:\Repos\dotnet-teaching-kellen\InterfaceDemo\InterfaceDemo\bin\Debug\netcoreapp3.1\InterfaceDemo.runtimeconfig.json
+C:\Repos\dotnet-teaching-kellen\InterfaceDemo\InterfaceDemo\bin\Debug\netcoreapp3.1\InterfaceDemo.runtimeconfig.dev.json
+C:\Repos\dotnet-teaching-kellen\InterfaceDemo\InterfaceDemo\bin\Debug\netcoreapp3.1\InterfaceDemo.dll
+C:\Repos\dotnet-teaching-kellen\InterfaceDemo\InterfaceDemo\bin\Debug\netcoreapp3.1\InterfaceDemo.pdb
+C:\Repos\dotnet-teaching-kellen\InterfaceDemo\InterfaceDemo\obj\Debug\netcoreapp3.1\InterfaceDemo.csproj.AssemblyReference.cache
+C:\Repos\dotnet-teaching-kellen\InterfaceDemo\InterfaceDemo\obj\Debug\netcoreapp3.1\InterfaceDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repos\dotnet-teaching-kellen\InterfaceDemo\InterfaceDemo\obj\Debug\netcoreapp3.1\InterfaceDemo.AssemblyInfoInputs.cache
+C:\Repos\dotnet-teaching-kellen\InterfaceDemo\InterfaceDemo\obj\Debug\netcoreapp3.1\InterfaceDemo.AssemblyInfo.cs
+C:\Repos\dotnet-teaching-kellen\InterfaceDemo\InterfaceDemo\obj\Debug\netcoreapp3.1\InterfaceDemo.csproj.CoreCompileInputs.cache
+C:\Repos\dotnet-teaching-kellen\InterfaceDemo\InterfaceDemo\obj\Debug\netcoreapp3.1\InterfaceDemo.dll
+C:\Repos\dotnet-teaching-kellen\InterfaceDemo\InterfaceDemo\obj\Debug\netcoreapp3.1\InterfaceDemo.pdb
+C:\Repos\dotnet-teaching-kellen\InterfaceDemo\InterfaceDemo\obj\Debug\netcoreapp3.1\InterfaceDemo.genruntimeconfig.cache

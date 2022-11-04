@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Repos\\dotnet-teaching-kellen\\InheritanceDemo\\InheritanceDemo\\InheritanceDemo.csproj": {}
+    "C:\\Repos\\dotnet-teaching-kellen\\InterfaceDemo\\InterfaceDemo\\InterfaceDemo.csproj": {}
   },
   "projects": {
-    "C:\\Repos\\dotnet-teaching-kellen\\InheritanceDemo\\InheritanceDemo\\InheritanceDemo.csproj": {
+    "C:\\Repos\\dotnet-teaching-kellen\\InterfaceDemo\\InterfaceDemo\\InterfaceDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repos\\dotnet-teaching-kellen\\InheritanceDemo\\InheritanceDemo\\InheritanceDemo.csproj",
-        "projectName": "InheritanceDemo",
-        "projectPath": "C:\\Repos\\dotnet-teaching-kellen\\InheritanceDemo\\InheritanceDemo\\InheritanceDemo.csproj",
+        "projectUniqueName": "C:\\Repos\\dotnet-teaching-kellen\\InterfaceDemo\\InterfaceDemo\\InterfaceDemo.csproj",
+        "projectName": "InterfaceDemo",
+        "projectPath": "C:\\Repos\\dotnet-teaching-kellen\\InterfaceDemo\\InterfaceDemo\\InterfaceDemo.csproj",
         "packagesPath": "C:\\Users\\Kellen\\.nuget\\packages\\",
-        "outputPath": "C:\\Repos\\dotnet-teaching-kellen\\InheritanceDemo\\InheritanceDemo\\obj\\",
+        "outputPath": "C:\\Repos\\dotnet-teaching-kellen\\InterfaceDemo\\InterfaceDemo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
