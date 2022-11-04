@@ -1,0 +1,13 @@
+C:\Repos\dotnet-teaching-kellen\NUnitDemo\NUnitDemo\bin\Debug\netcoreapp3.1\XUnitDemo.exe
+C:\Repos\dotnet-teaching-kellen\NUnitDemo\NUnitDemo\bin\Debug\netcoreapp3.1\XUnitDemo.deps.json
+C:\Repos\dotnet-teaching-kellen\NUnitDemo\NUnitDemo\bin\Debug\netcoreapp3.1\XUnitDemo.runtimeconfig.json
+C:\Repos\dotnet-teaching-kellen\NUnitDemo\NUnitDemo\bin\Debug\netcoreapp3.1\XUnitDemo.runtimeconfig.dev.json
+C:\Repos\dotnet-teaching-kellen\NUnitDemo\NUnitDemo\bin\Debug\netcoreapp3.1\XUnitDemo.dll
+C:\Repos\dotnet-teaching-kellen\NUnitDemo\NUnitDemo\bin\Debug\netcoreapp3.1\XUnitDemo.pdb
+C:\Repos\dotnet-teaching-kellen\NUnitDemo\NUnitDemo\obj\Debug\netcoreapp3.1\XUnitDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repos\dotnet-teaching-kellen\NUnitDemo\NUnitDemo\obj\Debug\netcoreapp3.1\XUnitDemo.AssemblyInfoInputs.cache
+C:\Repos\dotnet-teaching-kellen\NUnitDemo\NUnitDemo\obj\Debug\netcoreapp3.1\XUnitDemo.AssemblyInfo.cs
+C:\Repos\dotnet-teaching-kellen\NUnitDemo\NUnitDemo\obj\Debug\netcoreapp3.1\XUnitDemo.csproj.CoreCompileInputs.cache
+C:\Repos\dotnet-teaching-kellen\NUnitDemo\NUnitDemo\obj\Debug\netcoreapp3.1\XUnitDemo.dll
+C:\Repos\dotnet-teaching-kellen\NUnitDemo\NUnitDemo\obj\Debug\netcoreapp3.1\XUnitDemo.pdb
+C:\Repos\dotnet-teaching-kellen\NUnitDemo\NUnitDemo\obj\Debug\netcoreapp3.1\XUnitDemo.genruntimeconfig.cache

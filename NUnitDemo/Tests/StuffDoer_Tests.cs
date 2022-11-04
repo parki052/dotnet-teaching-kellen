@@ -32,5 +32,20 @@ namespace Tests
 
             Assert.Equal(expected, result);
         }
+
+        [Theory]
+        [InlineData(6, 3)]
+        [InlineData(0.5, 5.5)]
+        [InlineData(5, 0)]
+        public void StuffDoer_DivideBy(decimal num, decimal denom)
+        {
+            decimal expected = num / denom;
+
+            StuffDoer stuffDoer = new StuffDoer();
+
+            decimal result = stuffDoer.DivideBy(num, denom);
+
+            Assert.Equal(expected, result);
+        }
     }
 }

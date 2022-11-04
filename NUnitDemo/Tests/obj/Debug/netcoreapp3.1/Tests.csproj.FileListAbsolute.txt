@@ -1,9 +1,5 @@
 C:\Repos\dotnet-teaching-kellen\NUnitDemo\Tests\bin\Debug\netcoreapp3.1\CoverletSourceRootsMapping
 C:\Repos\dotnet-teaching-kellen\NUnitDemo\Tests\bin\Debug\netcoreapp3.1\testhost.dll
-C:\Repos\dotnet-teaching-kellen\NUnitDemo\Tests\bin\Debug\netcoreapp3.1\NUnitDemo.deps.json
-C:\Repos\dotnet-teaching-kellen\NUnitDemo\Tests\bin\Debug\netcoreapp3.1\NUnitDemo.runtimeconfig.json
-C:\Repos\dotnet-teaching-kellen\NUnitDemo\Tests\bin\Debug\netcoreapp3.1\NUnitDemo.runtimeconfig.dev.json
-C:\Repos\dotnet-teaching-kellen\NUnitDemo\Tests\bin\Debug\netcoreapp3.1\NUnitDemo.exe
 C:\Repos\dotnet-teaching-kellen\NUnitDemo\Tests\bin\Debug\netcoreapp3.1\testhost.exe
 C:\Repos\dotnet-teaching-kellen\NUnitDemo\Tests\bin\Debug\netcoreapp3.1\Microsoft.TestPlatform.PlatformAbstractions.dll
 C:\Repos\dotnet-teaching-kellen\NUnitDemo\Tests\bin\Debug\netcoreapp3.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
@@ -92,8 +88,6 @@ C:\Repos\dotnet-teaching-kellen\NUnitDemo\Tests\bin\Debug\netcoreapp3.1\zh-Hans\
 C:\Repos\dotnet-teaching-kellen\NUnitDemo\Tests\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 C:\Repos\dotnet-teaching-kellen\NUnitDemo\Tests\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 C:\Repos\dotnet-teaching-kellen\NUnitDemo\Tests\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-C:\Repos\dotnet-teaching-kellen\NUnitDemo\Tests\bin\Debug\netcoreapp3.1\NUnitDemo.dll
-C:\Repos\dotnet-teaching-kellen\NUnitDemo\Tests\bin\Debug\netcoreapp3.1\NUnitDemo.pdb
 C:\Repos\dotnet-teaching-kellen\NUnitDemo\Tests\obj\Debug\netcoreapp3.1\Tests.csproj.AssemblyReference.cache
 C:\Repos\dotnet-teaching-kellen\NUnitDemo\Tests\obj\Debug\netcoreapp3.1\Tests.GeneratedMSBuildEditorConfig.editorconfig
 C:\Repos\dotnet-teaching-kellen\NUnitDemo\Tests\obj\Debug\netcoreapp3.1\Tests.AssemblyInfoInputs.cache
@@ -103,3 +97,9 @@ C:\Repos\dotnet-teaching-kellen\NUnitDemo\Tests\obj\Debug\netcoreapp3.1\Tests.cs
 C:\Repos\dotnet-teaching-kellen\NUnitDemo\Tests\obj\Debug\netcoreapp3.1\Tests.dll
 C:\Repos\dotnet-teaching-kellen\NUnitDemo\Tests\obj\Debug\netcoreapp3.1\Tests.pdb
 C:\Repos\dotnet-teaching-kellen\NUnitDemo\Tests\obj\Debug\netcoreapp3.1\Tests.genruntimeconfig.cache
+C:\Repos\dotnet-teaching-kellen\NUnitDemo\Tests\bin\Debug\netcoreapp3.1\NUnitDemo.deps.json
+C:\Repos\dotnet-teaching-kellen\NUnitDemo\Tests\bin\Debug\netcoreapp3.1\NUnitDemo.runtimeconfig.json
+C:\Repos\dotnet-teaching-kellen\NUnitDemo\Tests\bin\Debug\netcoreapp3.1\NUnitDemo.runtimeconfig.dev.json
+C:\Repos\dotnet-teaching-kellen\NUnitDemo\Tests\bin\Debug\netcoreapp3.1\NUnitDemo.exe
+C:\Repos\dotnet-teaching-kellen\NUnitDemo\Tests\bin\Debug\netcoreapp3.1\NUnitDemo.dll
+C:\Repos\dotnet-teaching-kellen\NUnitDemo\Tests\bin\Debug\netcoreapp3.1\NUnitDemo.pdb

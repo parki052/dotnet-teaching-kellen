@@ -30,7 +30,7 @@ namespace NUnitDemo
 
         public decimal DivideBy(decimal numerator, decimal denominator)
         {
-            throw new NotImplementedException();
+            return numerator / denominator;
         }
     }
 }
