@@ -1,0 +1,14 @@
+C:\Repos\InheritanceDemo\InheritanceDemo\bin\Debug\netcoreapp3.1\InheritanceDemo.exe
+C:\Repos\InheritanceDemo\InheritanceDemo\bin\Debug\netcoreapp3.1\InheritanceDemo.deps.json
+C:\Repos\InheritanceDemo\InheritanceDemo\bin\Debug\netcoreapp3.1\InheritanceDemo.runtimeconfig.json
+C:\Repos\InheritanceDemo\InheritanceDemo\bin\Debug\netcoreapp3.1\InheritanceDemo.runtimeconfig.dev.json
+C:\Repos\InheritanceDemo\InheritanceDemo\bin\Debug\netcoreapp3.1\InheritanceDemo.dll
+C:\Repos\InheritanceDemo\InheritanceDemo\bin\Debug\netcoreapp3.1\InheritanceDemo.pdb
+C:\Repos\InheritanceDemo\InheritanceDemo\obj\Debug\netcoreapp3.1\InheritanceDemo.csproj.AssemblyReference.cache
+C:\Repos\InheritanceDemo\InheritanceDemo\obj\Debug\netcoreapp3.1\InheritanceDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repos\InheritanceDemo\InheritanceDemo\obj\Debug\netcoreapp3.1\InheritanceDemo.AssemblyInfoInputs.cache
+C:\Repos\InheritanceDemo\InheritanceDemo\obj\Debug\netcoreapp3.1\InheritanceDemo.AssemblyInfo.cs
+C:\Repos\InheritanceDemo\InheritanceDemo\obj\Debug\netcoreapp3.1\InheritanceDemo.csproj.CoreCompileInputs.cache
+C:\Repos\InheritanceDemo\InheritanceDemo\obj\Debug\netcoreapp3.1\InheritanceDemo.dll
+C:\Repos\InheritanceDemo\InheritanceDemo\obj\Debug\netcoreapp3.1\InheritanceDemo.pdb
+C:\Repos\InheritanceDemo\InheritanceDemo\obj\Debug\netcoreapp3.1\InheritanceDemo.genruntimeconfig.cache
