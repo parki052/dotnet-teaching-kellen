@@ -1,0 +1,13 @@
+C:\Repos\dotnet-teaching-kellen\RPS_Interfaces\RPS_Interfaces\bin\Debug\netcoreapp3.1\RPS_Interfaces.exe
+C:\Repos\dotnet-teaching-kellen\RPS_Interfaces\RPS_Interfaces\bin\Debug\netcoreapp3.1\RPS_Interfaces.deps.json
+C:\Repos\dotnet-teaching-kellen\RPS_Interfaces\RPS_Interfaces\bin\Debug\netcoreapp3.1\RPS_Interfaces.runtimeconfig.json
+C:\Repos\dotnet-teaching-kellen\RPS_Interfaces\RPS_Interfaces\bin\Debug\netcoreapp3.1\RPS_Interfaces.runtimeconfig.dev.json
+C:\Repos\dotnet-teaching-kellen\RPS_Interfaces\RPS_Interfaces\bin\Debug\netcoreapp3.1\RPS_Interfaces.dll
+C:\Repos\dotnet-teaching-kellen\RPS_Interfaces\RPS_Interfaces\bin\Debug\netcoreapp3.1\RPS_Interfaces.pdb
+C:\Repos\dotnet-teaching-kellen\RPS_Interfaces\RPS_Interfaces\obj\Debug\netcoreapp3.1\RPS_Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repos\dotnet-teaching-kellen\RPS_Interfaces\RPS_Interfaces\obj\Debug\netcoreapp3.1\RPS_Interfaces.AssemblyInfoInputs.cache
+C:\Repos\dotnet-teaching-kellen\RPS_Interfaces\RPS_Interfaces\obj\Debug\netcoreapp3.1\RPS_Interfaces.AssemblyInfo.cs
+C:\Repos\dotnet-teaching-kellen\RPS_Interfaces\RPS_Interfaces\obj\Debug\netcoreapp3.1\RPS_Interfaces.csproj.CoreCompileInputs.cache
+C:\Repos\dotnet-teaching-kellen\RPS_Interfaces\RPS_Interfaces\obj\Debug\netcoreapp3.1\RPS_Interfaces.dll
+C:\Repos\dotnet-teaching-kellen\RPS_Interfaces\RPS_Interfaces\obj\Debug\netcoreapp3.1\RPS_Interfaces.pdb
+C:\Repos\dotnet-teaching-kellen\RPS_Interfaces\RPS_Interfaces\obj\Debug\netcoreapp3.1\RPS_Interfaces.genruntimeconfig.cache
