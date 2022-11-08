@@ -1,4 +1,8 @@
-﻿using System;
+﻿using MaterialsApp.Data;
+using MaterialsApp.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace MaterialsApp
 {
@@ -6,7 +10,7 @@ namespace MaterialsApp
     {
         static void Main(string[] args)
         {
-            Application application = new Application();
+            Application application = new Application(new InMemoryDataSource());
 
             application.Run();
         }

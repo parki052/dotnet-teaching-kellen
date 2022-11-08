@@ -1,6 +1,7 @@
 ﻿using MaterialsApp.Models;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace MaterialsApp.Data
@@ -8,6 +9,7 @@ namespace MaterialsApp.Data
     class InMemoryDataSource : IDataSource
     {
         private List<User> Users { get; set; }
+        
         public InMemoryDataSource()
         {
             Users = new List<User>()
@@ -31,17 +33,22 @@ namespace MaterialsApp.Data
             };
         }
 
-        public void CheckResources()
+        public User CheckResources(User user)
         {
-            
+            return user;
         }
-        public void DepositResource()
+        public void DepositResource(User user)
         {
 
         }
-        public void WithdrawResource()
+        public void WithdrawResource(User user)
         {
 
+        }
+        public User Authenticate(string username)
+        {
+            User user = Users.SingleOrDefault(user => user.Username == username);
+            return user;
         }
     }
 }

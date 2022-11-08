@@ -1,4 +1,5 @@
-﻿using MaterialsApp.Logic;
+﻿using MaterialsApp.Data;
+using MaterialsApp.Logic;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -9,6 +10,11 @@ namespace MaterialsApp
     {
         private bool Exit { get; set; } = false;
         private Manager Manager { get; set; }
+
+        public Application(IDataSource dataSource)
+        {
+            Manager = new Manager(dataSource);
+        }
 
         public void Run()
         {
@@ -37,6 +43,7 @@ namespace MaterialsApp
             switch (cki.Key)
             {
                 case ConsoleKey.D1:
+                    Manager.CheckResources();
 
                     break;
                 case ConsoleKey.D2:
