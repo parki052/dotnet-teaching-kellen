@@ -44,16 +44,16 @@ namespace MaterialsApp
             {
                 case ConsoleKey.D1:
                     Manager.CheckResources();
-
                     break;
+
                 case ConsoleKey.D2:
-
+                    Manager.DepositResource();
                     break;
+
                 case ConsoleKey.D3:
-
                     break;
-                case ConsoleKey.Escape:
 
+                case ConsoleKey.Escape:
                     Exit = true;
                     break;
 

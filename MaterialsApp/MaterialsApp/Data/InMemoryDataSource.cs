@@ -33,22 +33,20 @@ namespace MaterialsApp.Data
             };
         }
 
-        public User CheckResources(User user)
-        {
-            return user;
-        }
-        public void DepositResource(User user)
-        {
+        public User CheckResources(User user) => user;
 
-        }
         public void WithdrawResource(User user)
         {
 
         }
-        public User Authenticate(string username)
-        {
-            User user = Users.SingleOrDefault(user => user.Username == username);
-            return user;
-        }
+        public User Authenticate(string username) => Users.SingleOrDefault(user => user.Username == username);
+
+        public void DepositWood(User user, int amount) => user.WoodCount += amount;
+
+        public void DepositStone(User user, int amount) => user.StoneCount += amount;
+
+        public void DepositIron(User user, int amount) => user.IronCount += amount;
+
+        public void DepositGold(User user, int amount) => user.GoldCount += amount;
     }
 }

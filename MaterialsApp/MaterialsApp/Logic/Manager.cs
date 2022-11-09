@@ -37,9 +37,61 @@ namespace MaterialsApp.Logic
             string username = GetUsername();
             User user = IDataSource.Authenticate(username);
 
-            if (user != null)
+            if(user == null)
             {
-                //implement deposit functionality
+                Console.WriteLine($"Error: user {username} not found. Press any key to return to the main menu... ");
+                Console.ReadKey();
+            }
+            else
+            {
+                ResourceType resource = GetResourceType();
+
+                if(resource == ResourceType.Invalid)
+                {
+                    Console.WriteLine("Error: resource type selection was not valid. Press any key to return to the main menu...");
+                    Console.ReadKey();
+                }
+                else
+                {
+                    int depositAmount = GetIntFromUser($"Please enter the number of {resource} to deposit: ");
+
+                    if(depositAmount <= 0)
+                    {
+                        Console.WriteLine("Error: resouce amount must be an integer greater than 0. Press any key to return to the main menu...");
+                        Console.ReadKey();
+                    }
+                    else
+                    {
+                        RouteDeposit(user, resource, depositAmount);
+                        Console.WriteLine($"Successfully deposited {depositAmount} {resource} into the account. Press any key to return to the main menu...");
+                        Console.ReadKey();
+                    }
+                }
+            }
+        }
+
+        private void RouteDeposit(User user, ResourceType resource, int depositAmount)
+        {
+            switch (resource)
+            {
+                case ResourceType.Gold:
+                    IDataSource.DepositGold(user, depositAmount);
+                    break;
+
+                case ResourceType.Iron:
+                    IDataSource.DepositIron(user, depositAmount);
+                    break;
+
+                case ResourceType.Stone:
+                    IDataSource.DepositStone(user, depositAmount);
+                    break;
+
+                case ResourceType.Wood:
+                    IDataSource.DepositWood(user, depositAmount);
+                    break;
+
+                default:
+                    throw new Exception("Error: RouteDeposit unable to route deposit request.");
             }
         }
 
@@ -78,6 +130,50 @@ namespace MaterialsApp.Logic
             Console.ReadKey();
         }
 
+        private ResourceType GetResourceType()
+        {
+            Console.Clear();
+            Console.WriteLine("***Select a resource, then press enter***\n");
+            Console.WriteLine("1. Wood\n2. Stone\n3. Iron\n4. Gold\n");
 
+            ResourceType resource;
+            string userInput = Console.ReadLine();
+
+            switch (userInput)
+            {
+                case "1":
+                    resource = ResourceType.Wood;
+                    break;
+
+                case "2":
+                    resource = ResourceType.Stone;
+                    break;
+
+                case "3":
+                    resource = ResourceType.Iron;
+                    break;
+
+                case "4":
+                    resource = ResourceType.Gold;
+                    break;
+
+                default:
+                    resource = ResourceType.Invalid;
+                    break;
+            }
+
+            return resource;
+        }
+
+        private int GetIntFromUser(string prompt)
+        {
+            Console.Write(prompt);
+            string input = Console.ReadLine();
+
+            int parsedInt = -1;
+            int.TryParse(input, out parsedInt);
+
+            return parsedInt;
+        }
     }
 }
