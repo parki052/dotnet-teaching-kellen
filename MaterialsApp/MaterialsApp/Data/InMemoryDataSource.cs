@@ -6,7 +6,7 @@ using System.Text;
 
 namespace MaterialsApp.Data
 {
-    class InMemoryDataSource : IDataSource
+    public class InMemoryDataSource : IDataSource
     {
         private List<User> Users { get; set; }
         
@@ -33,20 +33,15 @@ namespace MaterialsApp.Data
             };
         }
 
-        public User CheckResources(User user) => user;
-
+        public User GetUser(User user) => user;
+        public User Authenticate(string username) => Users.SingleOrDefault(user => user.Username == username);
         public void WithdrawResource(User user)
         {
 
         }
-        public User Authenticate(string username) => Users.SingleOrDefault(user => user.Username == username);
-
         public void DepositWood(User user, int amount) => user.WoodCount += amount;
-
         public void DepositStone(User user, int amount) => user.StoneCount += amount;
-
         public void DepositIron(User user, int amount) => user.IronCount += amount;
-
         public void DepositGold(User user, int amount) => user.GoldCount += amount;
     }
 }

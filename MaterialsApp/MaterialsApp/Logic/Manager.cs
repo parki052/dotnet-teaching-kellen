@@ -22,7 +22,7 @@ namespace MaterialsApp.Logic
 
             if (user != null)
             {
-                User userToCheck = IDataSource.CheckResources(user);
+                User userToCheck = IDataSource.GetUser(user);
                 PrintUserResources(userToCheck);
             }
             else
