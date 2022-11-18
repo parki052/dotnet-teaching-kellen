@@ -6,7 +6,7 @@ using System.Text;
 
 namespace MaterialsApp.Logic
 {
-    class Manager
+    public class Manager
     {
         private IDataSource IDataSource { get; set; }
 
@@ -15,58 +15,110 @@ namespace MaterialsApp.Logic
             IDataSource = dataSource;
         }
 
-        public void CheckResources()
+        public WorkflowResponse CheckResources(string username)
         {
-            string username = GetUsername();
             User user = IDataSource.Authenticate(username);
+            WorkflowResponse response = new WorkflowResponse();
 
-            if (user != null)
+            if (user == null)
+            {
+                response.Success = false;
+                response.Message = $"Error: user {username} not found. Press any key to return to the main menu... ";
+            }
+            else
             {
                 User userToCheck = IDataSource.GetUser(user);
-                PrintUserResources(userToCheck);
+
+                response.Success = true;
+                response.User = userToCheck;
             }
-            else
-            {
-                Console.WriteLine($"Error: user {username} not found. Press any key to return to the main menu... ");
-                Console.ReadKey();
-            }
+
+            return response;
         }
 
-        public void DepositResource()
+        public WorkflowResponse DepositResource(string username, ResourceType resource, int depositAmount)
         {
-            string username = GetUsername();
             User user = IDataSource.Authenticate(username);
+            WorkflowResponse response = new WorkflowResponse();
 
-            if(user == null)
+            if (user == null)
             {
-                Console.WriteLine($"Error: user {username} not found. Press any key to return to the main menu... ");
-                Console.ReadKey();
+                response.Success = false;
+                response.Message = $"Error: user {username} not found. Press any key to return to the main menu... ";
+            }
+            else if (resource == ResourceType.Invalid)
+            {
+                response.Success = false;
+                response.Message = "Error: resource type selection was not valid. Press any key to return to the main menu...";
+            }
+            else if (depositAmount <= 0)
+            {
+                response.Success = false;
+                response.Message = "Error: resouce amount must be an integer greater than 0. Press any key to return to the main menu...";
             }
             else
             {
-                ResourceType resource = GetResourceType();
+                RouteDeposit(user, resource, depositAmount);
+                response.Success = true;
+                response.Message = $"Successfully deposited {depositAmount} {resource} into the account. Press any key to return to the main menu...";
+            }
 
-                if(resource == ResourceType.Invalid)
-                {
-                    Console.WriteLine("Error: resource type selection was not valid. Press any key to return to the main menu...");
-                    Console.ReadKey();
-                }
-                else
-                {
-                    int depositAmount = GetIntFromUser($"Please enter the number of {resource} to deposit: ");
+            return response;
+        }
 
-                    if(depositAmount <= 0)
-                    {
-                        Console.WriteLine("Error: resouce amount must be an integer greater than 0. Press any key to return to the main menu...");
-                        Console.ReadKey();
-                    }
-                    else
-                    {
-                        RouteDeposit(user, resource, depositAmount);
-                        Console.WriteLine($"Successfully deposited {depositAmount} {resource} into the account. Press any key to return to the main menu...");
-                        Console.ReadKey();
-                    }
-                }
+        public WorkflowResponse WithdrawResource(string username, ResourceType resource, int withdrawAmount)
+        {
+            User user = IDataSource.Authenticate(username);
+            WorkflowResponse response = new WorkflowResponse();
+
+            if (user == null)
+            {
+                response.Success = false;
+                response.Message = $"Error: user {username} not found. Press any key to return to the main menu... ";
+            }
+            else if (resource == ResourceType.Invalid)
+            {
+                response.Success = false;
+                response.Message = "Error: resource type selection was not valid. Press any key to return to the main menu...";
+            }
+            else if (withdrawAmount <= 0)
+            {
+                response.Success = false;
+                response.Message = "Error: resouce amount must be an integer greater than 0. Press any key to return to the main menu...";
+            }
+            else if (GetResourceAmount(resource, user) < withdrawAmount)
+            {
+                response.Success = false;
+                response.Message = $"Error: insufficient balance of {resource}";
+            }
+            else
+            {
+                RouteWithdraw(user, resource, withdrawAmount);
+                response.Success = true;
+                response.Message = $"Successfully withdrew {withdrawAmount} {resource} from account. Press any key to return to the main menu...";
+            }
+
+            return response;
+        }
+
+        private int GetResourceAmount(ResourceType resource, User user)
+        {
+            switch (resource)
+            {
+                case ResourceType.Gold:
+                    return user.GoldCount;
+
+                case ResourceType.Iron:
+                    return user.IronCount;
+
+                case ResourceType.Stone:
+                    return user.StoneCount;
+
+                case ResourceType.Wood:
+                    return user.WoodCount;
+                
+                default:
+                    throw new Exception("Error in routing resource type in GetResourceAmount");
             }
         }
 
@@ -95,85 +147,29 @@ namespace MaterialsApp.Logic
             }
         }
 
-        public void WithdrawResource()
+        private void RouteWithdraw(User user, ResourceType resource, int withdrawAmount)
         {
-            string username = GetUsername();
-            User user = IDataSource.Authenticate(username);
-
-            if (user != null)
+            switch (resource)
             {
-                //implement withdraw functionality
-            }
-        }
-
-        private string GetUsername()
-        {
-            Console.Clear();
-
-            Console.Write("Please enter your username: ");
-            string input = Console.ReadLine();
-            
-            return input;
-        }
-
-        private void PrintUserResources(User user)
-        {
-            Console.Clear();
-
-            Console.WriteLine($"{user.Username}'s Materials:\n\n");
-            Console.WriteLine($"Wood: {user.WoodCount}");
-            Console.WriteLine($"Stone: {user.StoneCount}");
-            Console.WriteLine($"Iron: {user.IronCount}");
-            Console.WriteLine($"Gold: {user.GoldCount}");
-            Console.WriteLine("\n\nPress any key to return to the main menu...");
-
-            Console.ReadKey();
-        }
-
-        private ResourceType GetResourceType()
-        {
-            Console.Clear();
-            Console.WriteLine("***Select a resource, then press enter***\n");
-            Console.WriteLine("1. Wood\n2. Stone\n3. Iron\n4. Gold\n");
-
-            ResourceType resource;
-            string userInput = Console.ReadLine();
-
-            switch (userInput)
-            {
-                case "1":
-                    resource = ResourceType.Wood;
+                case ResourceType.Gold:
+                    IDataSource.WithdrawGold(user, withdrawAmount);
                     break;
 
-                case "2":
-                    resource = ResourceType.Stone;
+                case ResourceType.Iron:
+                    IDataSource.WithdrawIron(user, withdrawAmount);
                     break;
 
-                case "3":
-                    resource = ResourceType.Iron;
+                case ResourceType.Stone:
+                    IDataSource.WithdrawStone(user, withdrawAmount);
                     break;
 
-                case "4":
-                    resource = ResourceType.Gold;
+                case ResourceType.Wood:
+                    IDataSource.WithdrawWood(user, withdrawAmount);
                     break;
 
                 default:
-                    resource = ResourceType.Invalid;
-                    break;
+                    throw new Exception("Error: RouteDeposit unable to route deposit request.");
             }
-
-            return resource;
-        }
-
-        private int GetIntFromUser(string prompt)
-        {
-            Console.Write(prompt);
-            string input = Console.ReadLine();
-
-            int parsedInt = -1;
-            int.TryParse(input, out parsedInt);
-
-            return parsedInt;
         }
     }
 }

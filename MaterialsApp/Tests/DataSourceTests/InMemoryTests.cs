@@ -6,30 +6,10 @@ using System.Linq;
 using Xunit;
 
 
-namespace Tests
+namespace Tests.DataSourceTests
 {
     public class InMemoryTests
     {
-        public List<User> TestUsers = new List<User>()
-        {
-            new User()
-            {
-                Username = "Test1",
-                WoodCount = 0,
-                StoneCount = 0,
-                IronCount = 0,
-                GoldCount = 0
-            },
-            new User()
-            {
-                Username = "Test2",
-                WoodCount = 5000,
-                StoneCount = 1000,
-                IronCount = 3000,
-                GoldCount = 100000
-            }
-        };
-
         [Fact]
         public void InMemoryDataSource_GetUser_CanGetUser()
         {

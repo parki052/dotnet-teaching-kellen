@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MaterialsApp.Models
 {
-    enum ResourceType
+    public enum ResourceType
     {
         Wood,
         Stone,

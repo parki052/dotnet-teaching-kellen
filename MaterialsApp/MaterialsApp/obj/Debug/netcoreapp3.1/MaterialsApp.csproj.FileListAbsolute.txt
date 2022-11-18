@@ -25,4 +25,3 @@ C:\Repos\dotnet-teaching-kellen\MaterialsApp\MaterialsApp\obj\Debug\netcoreapp3.
 C:\Repos\dotnet-teaching-kellen\MaterialsApp\MaterialsApp\obj\Debug\netcoreapp3.1\MaterialsApp.dll
 C:\Repos\dotnet-teaching-kellen\MaterialsApp\MaterialsApp\obj\Debug\netcoreapp3.1\MaterialsApp.pdb
 C:\Repos\dotnet-teaching-kellen\MaterialsApp\MaterialsApp\obj\Debug\netcoreapp3.1\MaterialsApp.genruntimeconfig.cache
-C:\Repos\dotnet-teaching-kellen\MaterialsApp\MaterialsApp\obj\Debug\netcoreapp3.1\MaterialsApp.csproj.AssemblyReference.cache

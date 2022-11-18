@@ -8,7 +8,7 @@ namespace MaterialsApp.Data
 {
     public class InMemoryDataSource : IDataSource
     {
-        private List<User> Users { get; set; }
+        public List<User> Users { get; set; }
         
         public InMemoryDataSource()
         {
@@ -17,10 +17,10 @@ namespace MaterialsApp.Data
                 new User()
                 {
                     Username = "Timmy",
-                    WoodCount = 0,
-                    StoneCount = 0,
-                    IronCount = 0,
-                    GoldCount = 0
+                    WoodCount = 1,
+                    StoneCount = 1,
+                    IronCount = 1,
+                    GoldCount = 1
                 },
                 new User()
                 {
@@ -34,14 +34,23 @@ namespace MaterialsApp.Data
         }
 
         public User GetUser(User user) => user;
-        public User Authenticate(string username) => Users.SingleOrDefault(user => user.Username == username);
-        public void WithdrawResource(User user)
-        {
 
-        }
+        public User Authenticate(string username) => Users.SingleOrDefault(user => user.Username == username);
+
         public void DepositWood(User user, int amount) => user.WoodCount += amount;
+
         public void DepositStone(User user, int amount) => user.StoneCount += amount;
+
         public void DepositIron(User user, int amount) => user.IronCount += amount;
+
         public void DepositGold(User user, int amount) => user.GoldCount += amount;
+
+        public void WithdrawGold(User user, int amount) => user.GoldCount -= amount;
+
+        public void WithdrawIron(User user, int amount) => user.IronCount -= amount;
+
+        public void WithdrawStone(User user, int amount) => user.StoneCount -= amount;
+
+        public void WithdrawWood(User user, int amount) => user.WoodCount -= amount;
     }
 }
