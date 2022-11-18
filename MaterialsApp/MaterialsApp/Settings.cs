@@ -45,6 +45,5 @@ namespace MaterialsApp
                     throw new Exception("Data mode could not be configured");
             }
         }
-
     }
 }

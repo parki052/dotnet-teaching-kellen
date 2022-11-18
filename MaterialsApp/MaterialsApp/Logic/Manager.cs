@@ -17,20 +17,29 @@ namespace MaterialsApp.Logic
 
         public WorkflowResponse CheckResources(string username)
         {
-            User user = IDataSource.Authenticate(username);
             WorkflowResponse response = new WorkflowResponse();
 
-            if (user == null)
+            try
+            {
+                User user = IDataSource.Authenticate(username);
+
+                if (user == null)
+                {
+                    response.Success = false;
+                    response.Message = $"Error: user {username} not found. Press any key to return to the main menu... ";
+                }
+                else
+                {
+                    User userToCheck = IDataSource.GetUser(user);
+
+                    response.Success = true;
+                    response.User = userToCheck;
+                }
+            }
+            catch(Exception ex)
             {
                 response.Success = false;
-                response.Message = $"Error: user {username} not found. Press any key to return to the main menu... ";
-            }
-            else
-            {
-                User userToCheck = IDataSource.GetUser(user);
-
-                response.Success = true;
-                response.User = userToCheck;
+                response.Message = ex.Message;
             }
 
             return response;
@@ -38,29 +47,38 @@ namespace MaterialsApp.Logic
 
         public WorkflowResponse DepositResource(string username, ResourceType resource, int depositAmount)
         {
-            User user = IDataSource.Authenticate(username);
             WorkflowResponse response = new WorkflowResponse();
 
-            if (user == null)
+            try
+            {
+                User user = IDataSource.Authenticate(username);
+
+                if (user == null)
+                {
+                    response.Success = false;
+                    response.Message = $"Error: user {username} not found. Press any key to return to the main menu... ";
+                }
+                else if (resource == ResourceType.Invalid)
+                {
+                    response.Success = false;
+                    response.Message = "Error: resource type selection was not valid. Press any key to return to the main menu...";
+                }
+                else if (depositAmount <= 0)
+                {
+                    response.Success = false;
+                    response.Message = "Error: resouce amount must be an integer greater than 0. Press any key to return to the main menu...";
+                }
+                else
+                {
+                    RouteDeposit(user, resource, depositAmount);
+                    response.Success = true;
+                    response.Message = $"Successfully deposited {depositAmount} {resource} into the account. Press any key to return to the main menu...";
+                }
+            }
+            catch(Exception ex)
             {
                 response.Success = false;
-                response.Message = $"Error: user {username} not found. Press any key to return to the main menu... ";
-            }
-            else if (resource == ResourceType.Invalid)
-            {
-                response.Success = false;
-                response.Message = "Error: resource type selection was not valid. Press any key to return to the main menu...";
-            }
-            else if (depositAmount <= 0)
-            {
-                response.Success = false;
-                response.Message = "Error: resouce amount must be an integer greater than 0. Press any key to return to the main menu...";
-            }
-            else
-            {
-                RouteDeposit(user, resource, depositAmount);
-                response.Success = true;
-                response.Message = $"Successfully deposited {depositAmount} {resource} into the account. Press any key to return to the main menu...";
+                response.Message = ex.Message;
             }
 
             return response;
@@ -68,34 +86,43 @@ namespace MaterialsApp.Logic
 
         public WorkflowResponse WithdrawResource(string username, ResourceType resource, int withdrawAmount)
         {
-            User user = IDataSource.Authenticate(username);
             WorkflowResponse response = new WorkflowResponse();
+            
+            try
+            {
+                User user = IDataSource.Authenticate(username);
 
-            if (user == null)
+                if (user == null)
+                {
+                    response.Success = false;
+                    response.Message = $"Error: user {username} not found. Press any key to return to the main menu... ";
+                }
+                else if (resource == ResourceType.Invalid)
+                {
+                    response.Success = false;
+                    response.Message = "Error: resource type selection was not valid. Press any key to return to the main menu...";
+                }
+                else if (withdrawAmount <= 0)
+                {
+                    response.Success = false;
+                    response.Message = "Error: resouce amount must be an integer greater than 0. Press any key to return to the main menu...";
+                }
+                else if (GetResourceAmount(resource, user) < withdrawAmount)
+                {
+                    response.Success = false;
+                    response.Message = $"Error: insufficient balance of {resource}";
+                }
+                else
+                {
+                    RouteWithdraw(user, resource, withdrawAmount);
+                    response.Success = true;
+                    response.Message = $"Successfully withdrew {withdrawAmount} {resource} from account. Press any key to return to the main menu...";
+                }
+            }
+            catch(Exception ex)
             {
                 response.Success = false;
-                response.Message = $"Error: user {username} not found. Press any key to return to the main menu... ";
-            }
-            else if (resource == ResourceType.Invalid)
-            {
-                response.Success = false;
-                response.Message = "Error: resource type selection was not valid. Press any key to return to the main menu...";
-            }
-            else if (withdrawAmount <= 0)
-            {
-                response.Success = false;
-                response.Message = "Error: resouce amount must be an integer greater than 0. Press any key to return to the main menu...";
-            }
-            else if (GetResourceAmount(resource, user) < withdrawAmount)
-            {
-                response.Success = false;
-                response.Message = $"Error: insufficient balance of {resource}";
-            }
-            else
-            {
-                RouteWithdraw(user, resource, withdrawAmount);
-                response.Success = true;
-                response.Message = $"Successfully withdrew {withdrawAmount} {resource} from account. Press any key to return to the main menu...";
+                response.Message = ex.Message;
             }
 
             return response;

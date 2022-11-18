@@ -37,6 +37,9 @@ namespace Tests
                 Assert.Equal(expectedGold, actualGold);
             }
         }
+
+        #region DepositResource Tests
+
         [Theory]
         [InlineData("Timmy", 15)]
         [InlineData("Doug", 15)]
@@ -44,8 +47,6 @@ namespace Tests
         [InlineData("Doug", 1000)]
         [InlineData("Timmy", 1)]
         [InlineData("Doug", 1)]
-
-        #region DepositResource Tests
         public void Manager_DepositResource_CanDepositGold(string username, int depositAmount)
         {
             InMemoryDataSource dataSource = new InMemoryDataSource();
