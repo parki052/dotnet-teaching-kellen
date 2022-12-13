@@ -1,0 +1,14 @@
+/* Element selector (selects all instances of the given element) */
+body{
+    background-color: paleturquoise;
+    text-align: center;
+}
+/* Class selector (selects all instances of the given class) */
+.green{
+    color:green
+}
+/* ID selector (ONLY selects the instance of the given ID) */
+#contactParagraph{
+    display:none
+}
+
