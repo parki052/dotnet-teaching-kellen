@@ -1,7 +1,19 @@
-function greetUser(){
-    var name =
-        document.getElementById("userNameInput").value;
+let numbers = [];
 
-    document.getElementById("greeting").style.display = "block";
-    document.getElementById("userName").innerText = name;
+function addNumber() {
+
+    let number = 
+        document.getElementById("numberInput").value;
+    
+    if(!isNaN(number)){
+        numbers.push(number);
+    }
+    
+    document.getElementById("currentNumbers").innerText = "";
+
+    if(numbers.length > 0){
+        for(let i = 0; i < numbers.length; i++){
+            document.getElementById("currentNumbers").innerText += `${numbers[i]}` + "\n";
+        }
+    }
 }
