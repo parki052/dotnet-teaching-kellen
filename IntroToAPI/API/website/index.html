@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Intro to WebAPI</title>
+    </head>
+    <body>
+        <button onclick="getStudents()">Get All Students</button>
+        <ul id="students">
+
+        </ul>
+    <div>
+        <span>
+            <input id="studentId" type="text" placeholder="Enter a Student Id"/>
+            <button onclick="getStudentById()">Load Student</button>
+        </span>
+        <span>
+            <input id="removeStudentId" type="text" placeholder="Enter a Student Id to remove"/>
+            <button onclick="removeStudentById()">Remove Student</button>
+        </span>
+    </div>
+    </body>
+    <script src="scripts.js"></script>
+</html>

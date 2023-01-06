@@ -1,0 +1,10 @@
+C:\Repos\dotnet-teaching-kellen\IntroToAPI\IntroToAPI\bin\Debug\netcoreapp3.1\IntroToAPI.deps.json
+C:\Repos\dotnet-teaching-kellen\IntroToAPI\IntroToAPI\bin\Debug\netcoreapp3.1\IntroToAPI.dll
+C:\Repos\dotnet-teaching-kellen\IntroToAPI\IntroToAPI\bin\Debug\netcoreapp3.1\IntroToAPI.pdb
+C:\Repos\dotnet-teaching-kellen\IntroToAPI\IntroToAPI\obj\Debug\netcoreapp3.1\IntroToAPI.csproj.AssemblyReference.cache
+C:\Repos\dotnet-teaching-kellen\IntroToAPI\IntroToAPI\obj\Debug\netcoreapp3.1\IntroToAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repos\dotnet-teaching-kellen\IntroToAPI\IntroToAPI\obj\Debug\netcoreapp3.1\IntroToAPI.AssemblyInfoInputs.cache
+C:\Repos\dotnet-teaching-kellen\IntroToAPI\IntroToAPI\obj\Debug\netcoreapp3.1\IntroToAPI.AssemblyInfo.cs
+C:\Repos\dotnet-teaching-kellen\IntroToAPI\IntroToAPI\obj\Debug\netcoreapp3.1\IntroToAPI.csproj.CoreCompileInputs.cache
+C:\Repos\dotnet-teaching-kellen\IntroToAPI\IntroToAPI\obj\Debug\netcoreapp3.1\IntroToAPI.dll
+C:\Repos\dotnet-teaching-kellen\IntroToAPI\IntroToAPI\obj\Debug\netcoreapp3.1\IntroToAPI.pdb
