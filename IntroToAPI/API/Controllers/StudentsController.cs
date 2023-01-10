@@ -49,6 +49,15 @@ namespace API.Controllers
             return student;
         }
 
+        [HttpPost]
+        [Route("add")]
+        public Response AddStudent([FromBody]Student student)
+        {
+            var response = DataSource.AddStudent(student.Name, student.Age);
+
+            return response;
+        }
+
         [HttpDelete]
         [Route("{id}")]
         public string RemoveStudentById(int id)

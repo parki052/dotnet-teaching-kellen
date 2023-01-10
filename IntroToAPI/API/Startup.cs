@@ -29,10 +29,12 @@ namespace API
         {
             services.AddCors(options =>
             {
-                options.AddPolicy(name: MyAllowSpecificOrigins,
-                    policy =>
+                options.AddPolicy(MyAllowSpecificOrigins,
+                    builder =>
                     {
-                        policy.WithOrigins("https://localhost:44333/");
+                        builder.AllowAnyOrigin();
+                        builder.AllowAnyHeader();
+                        builder.AllowAnyMethod();
                     });
             });
 

@@ -3,20 +3,37 @@
         <title>Intro to WebAPI</title>
     </head>
     <body>
-        <button onclick="getStudents()">Get All Students</button>
-        <ul id="students">
-
-        </ul>
     <div>
-        <span>
-            <input id="studentId" type="text" placeholder="Enter a Student Id"/>
-            <button onclick="getStudentById()">Load Student</button>
-        </span>
-        <span>
-            <input id="removeStudentId" type="text" placeholder="Enter a Student Id to remove"/>
-            <button onclick="removeStudentById()">Remove Student</button>
-        </span>
+        <h3>Get All Students</h3>
+        <div>
+            <button onclick="getStudents()">Get All Students</button>
+            <ul id="students">
+    
+            </ul>
+        </div>
+        <h3>Get Student By Id</h3>
+        <div>
+            <span>
+                <input id="studentId" type="text" placeholder="Enter a Student Id"/>
+                <button onclick="getStudentById()">Load Student</button>
+            </span>
+        </div>
+        <h3>Remove Student By Id</h3>
+        <div>
+            <span>
+                <input id="removeStudentId" type="text" placeholder="Enter a Student Id to remove"/>
+                <button onclick="removeStudentById()">Remove Student</button>
+            </span>            
+        </div>
+        <h3>Add Student</h3>
+        <div>
+            <span>
+                <input id="addStudent_name" type="text" placeholder="(name)"/>
+                <input id="addStudent_age" type="text" placeholder="(age)"/>
+                <button onclick="addStudent()">Add Student</button>
+            </span>            
+        </div>
     </div>
-    </body>
-    <script src="scripts.js"></script>
+</body>
+<script src="scripts.js"></script>
 </html>
