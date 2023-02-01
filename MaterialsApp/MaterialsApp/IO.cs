@@ -15,7 +15,9 @@ namespace MaterialsApp
 
         public IO()
         {
-            Manager = new Manager(Settings.DataSource);
+            Manager = new ManagerFactory().GetManager();
+
+            //Manager = new Manager(Settings.DataSource);
         }
 
         public void Run()

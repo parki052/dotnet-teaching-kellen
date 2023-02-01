@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaterialsApp", "MaterialsApp\MaterialsApp.csproj", "{B4756197-400C-4F16-99A6-CEDC8E701830}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{D57BAFF3-E0A3-4E0B-9970-DE2C2AF34F6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj", "{D57BAFF3-E0A3-4E0B-9970-DE2C2AF34F6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{F5BD1BC6-C8DB-4D71-B6CC-B2E028EEF58E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{D57BAFF3-E0A3-4E0B-9970-DE2C2AF34F6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D57BAFF3-E0A3-4E0B-9970-DE2C2AF34F6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D57BAFF3-E0A3-4E0B-9970-DE2C2AF34F6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5BD1BC6-C8DB-4D71-B6CC-B2E028EEF58E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5BD1BC6-C8DB-4D71-B6CC-B2E028EEF58E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5BD1BC6-C8DB-4D71-B6CC-B2E028EEF58E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5BD1BC6-C8DB-4D71-B6CC-B2E028EEF58E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
